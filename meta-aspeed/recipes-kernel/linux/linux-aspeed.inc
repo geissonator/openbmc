@@ -9,6 +9,12 @@ KCONFIG_MODE="--alldefconfig"
 KSRC ?= "git://github.com/openbmc/linux;protocol=git;branch=${KBRANCH}"
 SRC_URI = "${KSRC}"
 SRC_URI += " file://defconfig"
+SRC_URI_append_aspeed-g6 = "\
+    file://0001-dt-bindings-lpc-add-aspeed-g6-compatible-strings.patch \
+    file://0002-ARM-aspeed-g6-lpc-add-compatible-strings.patch \
+    file://0003-ARM-dts-aspeed-g6-Add-lpc-devices.patch \
+    file://0004-ARM-dts-aspeed-add-Rainier-system.patch \
+"
 
 LINUX_VERSION_EXTENSION ?= "-${SRCREV}"
 
