@@ -12,5 +12,6 @@ RemainAfterExit=yes
 TimeoutStartSec=60
 Restart=no
 
-ExecStart=/sbin/fw_setenv openbmconce
-ExecStart=/sbin/fw_setenv openbmconce
+ExecStart=/bin/echo "TODO ANDREWG"
+#ExecStart=/sbin/fw_setenv openbmconce
+#ExecStart=/sbin/fw_setenv openbmconce

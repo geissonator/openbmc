@@ -5,7 +5,8 @@ After=xyz.openbmc_project.Network.service
 
 [Service]
 Restart=no
-ExecStart=/usr/bin/env ncsi-netlink --set -x 2 -p 0 -c 0
+ExecStart=/bin/echo "TODO ANDREWG"
+#ExecStart=/usr/bin/env ncsi-netlink --set -x 2 -p 0 -c 0
 SyslogIdentifier=ncsi-netlink
 Type=oneshot
 

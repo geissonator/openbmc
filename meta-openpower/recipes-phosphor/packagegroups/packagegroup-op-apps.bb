@@ -45,8 +45,8 @@ RDEPENDS_${PN}-flash = " \
         openpower-software-manager\
         "
 
+# TODO ANDREWG - removed hostboot-settings
 SUMMARY_${PN}-system = "OpenPOWER System"
 RDEPENDS_${PN}-system = " \
-        hostboot-settings \
         pdbg \
         "

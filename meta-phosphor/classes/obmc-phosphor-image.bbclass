@@ -40,7 +40,7 @@ FEATURE_PACKAGES_obmc-inventory ?= "packagegroup-obmc-apps-inventory"
 FEATURE_PACKAGES_obmc-leds ?= "packagegroup-obmc-apps-leds"
 FEATURE_PACKAGES_obmc-logging-mgmt ?= "${@df_enabled(d, 'obmc-logging-mgmt', 'packagegroup-obmc-apps-logging')}"
 FEATURE_PACKAGES_obmc-remote-logging-mgmt ?= "packagegroup-obmc-apps-remote-logging"
-FEATURE_PACKAGES_obmc-net-ipmi ?= "phosphor-ipmi-net"
+# TODO ANDREWG FEATURE_PACKAGES_obmc-net-ipmi ?= "phosphor-ipmi-net"
 FEATURE_PACKAGES_obmc-sensors ?= "packagegroup-obmc-apps-sensors"
 FEATURE_PACKAGES_obmc-software ?= "packagegroup-obmc-apps-software"
 FEATURE_PACKAGES_obmc-system-mgmt ?= "${@df_enabled(d, 'obmc-phosphor-system-mgmt', 'virtual-obmc-system-mgmt')}"
@@ -69,7 +69,6 @@ IMAGE_FEATURES += " \
         obmc-leds \
         obmc-logging-mgmt \
         obmc-remote-logging-mgmt \
-        obmc-net-ipmi \
         obmc-sensors \
         obmc-software \
         obmc-system-mgmt \
@@ -80,6 +79,7 @@ IMAGE_FEATURES += " \
         obmc-settings-mgmt \
         "
 
+# TODO ANDREWG obmc-net-ipmi
 IMAGE_FEATURES_append_df-obmc-ubi-fs = " read-only-rootfs"
 
 CORE_IMAGE_EXTRA_INSTALL_append = " bash \

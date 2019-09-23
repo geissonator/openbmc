@@ -42,11 +42,11 @@ RDEPENDS_${PN}-extras = " \
         phosphor-bmcweb-cert-config \
         phosphor-nslcd-cert-config \
         phosphor-nslcd-authority-cert-config \
-        obmc-ikvm \
         phosphor-dbus-monitor \
         phosphor-systemd-policy \
         dbus-broker \
         "
+# TODO ANDREWG goes above ^   obmc-ikvm
 
 SUMMARY_${PN}-extrasdev = "Development features"
 RDEPENDS_${PN}-extrasdev = " \
